@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: right;
-    background-color: rgb(1, 1, 90);
+    background-color: purple;
     color: white;
 }
 
@@ -17,31 +17,46 @@
     align-content: center;
 }
 
-#
+#application_name{
+    text-align: center;
+    font-style: italic;
+    padding: 2%;
+}
 .footer_details{
     font-size: smaller;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(1, 1, 90);
+    padding: 20px;
+    background-color: purple;
     color: white;
 }
 
-#sitemap{
+#footer_1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+#footer_2{
+    flex: 1;
     list-style: none;
     font-size: smaller;
     text-align: center;
 }
 
-.contacts{
+#footer_3{
+    flex: 1;
     list-style: none;
     font-size: smaller;
     text-align: center;
+    margin-right: 0;
 }
 
 .copyright{
     text-align: center;
     font-size: x-small;
-    background-color: rgb(1, 1, 90);
+    background-color: purple;
     color: white;
 }
