@@ -16,3 +16,31 @@
     justify-content: space-around;
     align-content: center;
 }
+
+.footer_details{
+    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(1, 1, 90);
+    color: white;
+}
+
+#sitemap{
+    list-style: none;
+    font-size: smaller;
+    text-align: center;
+}
+
+.contacts{
+    list-style: none;
+    font-size: smaller;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    font-size: x-small;
+    background-color: rgb(1, 1, 90);
+    color: white;
+}
