@@ -17,6 +17,7 @@
     align-content: center;
 }
 
+#
 .footer_details{
     font-size: smaller;
     display: flex;
@@ -38,7 +39,7 @@
     text-align: center;
 }
 
-.footer{
+.copyright{
     text-align: center;
     font-size: x-small;
     background-color: rgb(1, 1, 90);
