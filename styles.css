@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: purple;
+    color: white;
+}
