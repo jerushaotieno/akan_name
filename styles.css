@@ -17,13 +17,17 @@
     align-content: center;
 }
 
-#application_name{
+.application_name{
     text-align: center;
     font-style: italic;
     padding: 2%;
+    color: purple;
 }
 
-
+.description{
+    border-style: solid;
+    width: 45%;
+}
 
 .form{
     border-style: solid;
