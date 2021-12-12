@@ -22,6 +22,14 @@
     font-style: italic;
     padding: 2%;
 }
+
+
+
+.form{
+    border-style: solid;
+    width: 45%;
+}
+
 .footer_details{
     font-size: smaller;
     display: flex;
@@ -44,14 +52,16 @@
     list-style: none;
     font-size: smaller;
     text-align: center;
+    line-height: 1%;
 }
 
 #footer_3{
     flex: 1;
     list-style: none;
-    font-size: smaller;
+    font-size: x-small;
     text-align: center;
     margin-right: 0;
+    line-height: 1%;
 }
 
 .copyright{

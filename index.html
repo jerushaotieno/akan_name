@@ -41,46 +41,54 @@
         </div>
     
         <div class=form>
-            <h5>
-                Generate My Akan Name
-            </h5>
+            <h6>
+                Generate Akan Name
+            </h6>
     
             <form>
                 <table>
-                    <table-row>
-                        <table-data>
-                            <strong>Year of Birth <span style="color: red;">*</span></strong>
-                        </table-data>
-                    </table-row> <br>
-    
-                    <input type="text" placeholder="Example: 2000"> <br>
+                    <div class="year_of_birth">
+                        <table-row>
+                            <table-data>
+                                <strong>Year of Birth <span style="color: red;">*</span></strong>
+                            </table-data>
+                        </table-row> <br>
+        
+                        <input type="text" placeholder="Example: 2000"> <br>
+                    </div>
                     
     
-                    <table-row>
-                        <table-data>
-                            <strong>Birth Month <span style="color: red;">*</span></strong>
-                        </table-data>
-                    </table-row> <br>
+                    <div class="birth_month">
+                        <table-row>
+                            <table-data>
+                                <strong>Birth Month <span style="color: red;">*</span></strong>
+                            </table-data>
+                        </table-row> <br>
+        
+                        <input type="text" placeholder="Example: January"> <br>
+                    </div>
     
-                    <input type="text" placeholder="Example: January"> <br>
+                    <div class="birth_date">
+                        <table-row>
+                            <table-data>
+                                <strong>Birth Date <span style="color: red;">*</span> </strong>
+                            </table-data>
+                        </table-row> <br>
+        
+                        <input type="text" placeholder="Example: 22"> <br>
+                    </div>
     
-                    <table-row>
-                        <table-data>
-                            <strong>Birth Date <span style="color: red;">*</span> </strong>
-                        </table-data>
-                    </table-row> <br>
-    
-                    <input type="text" placeholder="Example: 22"> <br>
-    
-                    <table-row>
-                        <table-data>
-                            <strong>Choose Your Gender <span style="color: red;">*</span> </strong>
-                        </table-data>
-                    </table-row> <br>
-                    
-                    <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
-                    
-                    <input type="radio" name="gender" id="gender" value="female" checked> Female<br><br>
+                    <div class="gender">
+                        <table-row>
+                            <table-data>
+                                <strong>Choose Your Gender <span style="color: red;">*</span> </strong>
+                            </table-data>
+                        </table-row> <br>
+                        
+                        <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
+                        
+                        <input type="radio" name="gender" id="gender" value="female" checked> Female<br><br>
+                    </div>
     
                     <input type="submit" value="SUBMIT">
                 </table>
@@ -138,10 +146,12 @@
         </div>
     </div>
 
-<div class="copyright">
+    <div class="copyright">
         <p>
             All Rights Reserved | Copyright &copy; 2021 | Designed by Jerusha Otieno
         </p>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
