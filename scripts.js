@@ -1,13 +1,20 @@
 // Backend JS code
 
-var akanName = function(y, m, d, g) {
-    var maleNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var d = new Date(y, --m, d);
-    if (g === "Male") {
-        return d && maleNames[d.getDay()];
+var akanName = function generateAkanName(year, month, date, gender) {
+    let maleNames = [];
+    let femaleNames = [];
+
+    maleNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    
+    const birthDay = new Date(year, month, date);
+    let day = birthDay.getDay();
+
+    if (gender === "Male") {
+        return day && maleNames[birthDay.getDay()];
+
     } else {
-        return d && femaleNames[d.getDay()];
+        return day && femaleNames[birthDay.getDay()];
     }
 }
 
@@ -15,13 +22,15 @@ var akanName = function(y, m, d, g) {
 
 $(document).ready(function() {
     $("form#form").submit(function(event) {
-        event.preventDefault();
-        var y = parseInt($("#year_of_birth").val());
-        var m = parseInt($("#birth_month").val());
-        var d = parseInt($("#birth_date").val());
-        var g = $("input:radio[name=gender]:checked").val();
-        var result = akanName(y, m, d, g);
-        alert("My Akan name is: " + result);
+        event.preventDefault()
+
+        let year = parseInt($("#year_of_birth").val());
+        let month = parseInt($("#birth_month").val());
+        let date = parseInt($("#birth_date").val());
+        let gender = $("input:radio[name=gender]:checked").val();
+        let result = akanName(year, month, date, gender);
+
+        alert("Your Akan name is" + result);
 
 //refresh page
         document.getElementById("form").reset();
