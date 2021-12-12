@@ -2,5 +2,9 @@ var akanName = function(year, month, date, gender) {
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var date = [new Date(year, month, date)];
-    if (gender)
+    if (gender == "Male") {
+        return date && maleNames[date.getDay()];
+    } else {
+        return date && femaleNames[date.getDay()];
+    }
 }
