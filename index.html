@@ -47,52 +47,22 @@
                 Generate Akan Name
             </h6>
     
-            <form>
-                <table>
-                    <div class="year_of_birth">
-                        <table-row>
-                            <table-data>
-                                <strong>Year of Birth <span style="color: red;">*</span></strong>
-                            </table-data>
-                        </table-row> <br>
-        
-                        <input type="text" placeholder="Example: 2000"> <br>
-                    </div>
-                    
+            <form id="form" name="form" onsubmit="findDay()">
+
+                <label for="Year of Birth"><strong>Year of Birth <span style="color: red;">*</span></strong></label><br>
+                <input type="number" id="year_of_birth" name="year" min="1900" max="2021" placeholder="Example: 2000"> <br>
+
+                <label for="Birth Month"><strong>Birth Month <span style="color: red;">*</span></strong></label><br>
+                <input type="number" id="birth_month" name="month" min="1" max="12" placeholder="Example: January=1"> <br>
     
-                    <div class="birth_month">
-                        <table-row>
-                            <table-data>
-                                <strong>Birth Month <span style="color: red;">*</span></strong>
-                            </table-data>
-                        </table-row> <br>
-        
-                        <input type="text" placeholder="Example: January"> <br>
-                    </div>
+                <label for="Birth Date"><strong>Birth Date <span style="color: red;">*</span> </strong></label><br>
+                <input type="number" id="birth_date" name="date" min="1" max="31" placeholder="Example: 22"> <br>
     
-                    <div class="birth_date">
-                        <table-row>
-                            <table-data>
-                                <strong>Birth Date <span style="color: red;">*</span> </strong>
-                            </table-data>
-                        </table-row> <br>
-        
-                        <input type="text" placeholder="Example: 22"> <br>
-                    </div>
+                <label for="Choose Your Gender"><strong>Choose Your Gender <span style="color: red;">*</span> </strong></label><br>
+                <input type="radio" name="gender" id="gender" value="female" checked> Female<br><br>
+                <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
     
-                    <div class="gender">
-                        <table-row>
-                            <table-data>
-                                <strong>Choose Your Gender <span style="color: red;">*</span> </strong>
-                            </table-data>
-                        </table-row> <br>
-                        
-                        <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
-                        
-                        <input type="radio" name="gender" id="gender" value="female" checked> Female<br><br>
-                    </div>
-    
-                    <input type="submit" value="SUBMIT">
+                <input type="submit" value="SUBMIT">
                 </table>
             </form>
         </div>
