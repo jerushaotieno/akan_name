@@ -8,6 +8,7 @@
     justify-content: right;
     background-color: purple;
     color: white;
+    font-size: small;
 }
 
 .web_application{
@@ -15,23 +16,34 @@
     flex-direction: flex-start;
     justify-content: space-around;
     align-content: center;
+    background-color: rgb(253, 224, 253);
 }
 
 .application_name{
     text-align: center;
     font-style: italic;
     padding: 2%;
-    color: purple;
+    background-color: rgb(253, 224, 253);
+    text-decoration: underline;
 }
 
 .description{
-    border-style: solid;
+    border-style: none;
     width: 45%;
 }
 
 .form{
     border-style: solid;
-    width: 45%;
+    width: 35%;
+    padding-left: 3%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+#generate_akan_name{
+    text-decoration: underline;
+    text-align: center;
 }
 
 .footer_details{
