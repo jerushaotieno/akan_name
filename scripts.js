@@ -5,7 +5,7 @@ var akanName = function (year, month, date, gender) {
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var date = new Date(year, --month, date);
 
-    if (gender === "Male") {
+    if (gender === "male") {
         return date && maleNames[date.getDay()];
 
     } else {
@@ -23,6 +23,7 @@ $(document).ready(function() {
         var month = parseInt($("#birth_month").val());
         var date = parseInt($("#birth_date").val());
         var gender = $("input:radio[name=gender]:checked").val();
+        console.log(gender);
         var result = akanName(year, month, date, gender);
         alert("Your Akan Name is " + result);
         
